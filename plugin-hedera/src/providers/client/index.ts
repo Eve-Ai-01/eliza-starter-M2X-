@@ -5,8 +5,8 @@ import {
     HederaPrivateKeyResult,
     HederaMirrorNodeConfig,
     HederaTransactionConfig
-} from "src/plugins/plugin-hedera/src/shared/types";
-import { DEFAULT_MIRROR_NODE_CONFIG, DEFAULT_TRANSACTION_CONFIG } from "src/plugins/plugin-hedera/src/shared/constants";
+} from "../../shared/types";
+import { DEFAULT_MIRROR_NODE_CONFIG, DEFAULT_TRANSACTION_CONFIG } from "../../shared/constants";
 import { HederaAgentKit } from "hedera-agent-kit";
 
 export class HederaProvider {
