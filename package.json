@@ -17,6 +17,7 @@
     "@elizaos/client-direct": "0.1.9",
     "@elizaos/client-discord": "0.1.9",
     "@elizaos/client-telegram": "0.1.9",
+    "@elizaos/plugin-hedera": "file:plugin-hedera",
     "@elizaos/client-twitter": "0.1.9",
     "@elizaos/core": "0.1.9",
     "@elizaos/plugin-bootstrap": "0.1.9",

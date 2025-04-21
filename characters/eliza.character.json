@@ -1,6 +1,6 @@
 {
   "name": "Eve",
-  "plugins": [],
+  "plugins": ["@elizaos/plugin-hedera"],
   "clients": ["discord"],
   "modelProvider": "grok",
   "settings": {
