@@ -54,7 +54,7 @@
       "@elizaos/plugin-hedera"
     ],
     "onlyBuiltDependencies": [
-      "@elizaos/plugin-hedera",
+      
       "better-sqlite3"
     ]
   },
