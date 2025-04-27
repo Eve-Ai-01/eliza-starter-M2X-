@@ -20,12 +20,7 @@
         "noEmitOnError": false,
         "moduleDetection": "force",
         "allowArbitraryExtensions": true,
-        "customConditions": ["@elizaos/source"],
-        "baseUrl": ".",
-        "paths": {
-            "@shared/*": ["src/shared/*"],
-            "@shared/providers/*": ["src/providers/*"]
-        }
+        "customConditions": ["@elizaos/source"]
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules", "dist", "src/**/*.d.ts", "types/**/*.test.ts"]

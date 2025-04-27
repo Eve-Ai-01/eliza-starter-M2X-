@@ -9,15 +9,14 @@
         "@hashgraph/sdk": "^2.56.0",
         "bignumber.js": "^9.1.2",
         "dotenv": "^16.4.7",
-        "hedera-agent-kit": "1.0.6",
+        "hedera-agent-kit": "^1.0.5",
         "tsup": "8.3.5",
         "zod": "^3.24.2"
     },
     "scripts": {
-        "build": "tsup src/index.ts --format esm --dts --no-watch",
-        "dev": "tsup src/index.ts --format esm --dts --watch",
-        "postinstall": "node -e \"if (!process.env.RAILWAY) require('child_process').execSync('pnpm run build', { stdio: 'inherit' });\"",
-        "start": "tsc && node --loader ts-node/esm src/index.ts",
+        "build": "tsup --format esm --dts",
+        "dev": "tsup --format esm --dts --watch",
+        "postinstall": "pnpm run build",
         "test": "vitest run"
     },
     "devDependencies": {
@@ -28,7 +27,7 @@
         "eslint-config-prettier": "^10.0.1",
         "prettier": "^3.5.0",
         "typescript": "^5.7.3",
-        "vitest": "^3.1.1"
+        "vitest": "^3.0.7"
     },
     "agentConfig": {
         "pluginType": "elizaos:plugin:0.1.9",
