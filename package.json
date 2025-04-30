@@ -21,7 +21,7 @@
     "@elizaos/core": "0.1.9",
     "@elizaos/plugin-arbitrage": "0.25.6-alpha.1",
     "@elizaos/plugin-bootstrap": "0.1.9",
-    "@elizaos/plugin-hedera": "file:plugin-hedera",
+    
     "@elizaos/plugin-image-generation": "0.1.9",
     "@elizaos/plugin-node": "0.1.9",
     "@elizaos/plugin-solana": "0.1.9",
