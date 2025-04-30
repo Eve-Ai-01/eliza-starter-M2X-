@@ -1,10 +1,10 @@
 import { Character,  Clients, defaultCharacter, ModelProviderName } from "@elizaos/core";
-import hederaPlugin from "../plugin-hedera/dist/index.js";
+
 
 export const character: Character = {
     ...defaultCharacter,
     name: "Eve",
-    plugins: [hederaPlugin],
+    
     clients: [Clients.DISCORD],
     modelProvider: ModelProviderName.GROK,
     settings: {

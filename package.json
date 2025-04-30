@@ -50,9 +50,7 @@
     "overrides": {
       "onnxruntime-node": "1.20.0"
     },
-    "ignoredBuiltDependencies": [
-      "@elizaos/plugin-hedera"
-    ],
+ 
     "onlyBuiltDependencies": [
       
       "better-sqlite3"
