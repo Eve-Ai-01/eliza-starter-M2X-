@@ -9,7 +9,7 @@ import {
 import { bootstrapPlugin } from "@elizaos/plugin-bootstrap";
 import { createNodePlugin } from "@elizaos/plugin-node";
 import { solanaPlugin } from "@elizaos/plugin-solana";
-import { hederaPlugin } from "../plugin-hedera/dist/index.js";
+
 import arbitragePlugin from "@elizaos/plugin-arbitrage";
 import fs from "fs";
 import net from "net";
@@ -25,6 +25,7 @@ import {
   parseArguments,
 } from "./config/index.ts";
 import { initializeDatabase } from "./database/index.ts";
+import { HederaAgentKit } from "hedera-agent-kit";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -62,7 +63,7 @@ export function createAgent(
       bootstrapPlugin,
       nodePlugin,
       character.settings?.secrets?.WALLET_PUBLIC_KEY ? solanaPlugin : null,
-      hederaPlugin,
+      HederaAgentKit,
       arbitragePlugin,
     ].filter(Boolean),
     providers: [],
